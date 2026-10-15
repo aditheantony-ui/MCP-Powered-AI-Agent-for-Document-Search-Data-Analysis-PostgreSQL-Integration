@@ -1,0 +1,11 @@
+services:
+  mcp-agent:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    stdin_open: true
+    tty: true
+    env_file:
+      - ../.env
+    volumes:
+      - ../data:/app/data:ro

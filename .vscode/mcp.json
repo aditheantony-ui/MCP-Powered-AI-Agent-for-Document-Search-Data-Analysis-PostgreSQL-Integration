@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "mcp-powered-ai-agent": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["main.py"]
+    }
+  }
+}

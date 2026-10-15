@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-powered-ai-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mcp-powered-ai-agent
+  template:
+    metadata:
+      labels:
+        app: mcp-powered-ai-agent
+    spec:
+      containers:
+        - name: mcp-agent
+          image: mcp-powered-ai-agent:latest
+          stdin: true
+          tty: true
+          ports:
+            - containerPort: 8000

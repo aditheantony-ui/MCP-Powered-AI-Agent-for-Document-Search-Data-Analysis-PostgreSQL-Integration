@@ -1,0 +1,4 @@
+MCP Powered AI Agent
+
+This sample document demonstrates local document search through the MCP server.
+It can be combined with structured data and read-only database tools.

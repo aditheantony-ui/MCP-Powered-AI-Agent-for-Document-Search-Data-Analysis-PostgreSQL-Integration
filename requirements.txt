@@ -1,0 +1,7 @@
+mcp<2
+pandas
+openpyxl
+python-dotenv
+psycopg[binary]
+pytest
+groq
